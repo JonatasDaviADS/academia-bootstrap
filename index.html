@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Velocity - Ginásio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #121212; 
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .text-amarelo { color: #ffeb3b !important; }
+        .bg-amarelo { background-color: #ffeb3b !important; color: #000 !important; font-weight: bold;}
+
+        .carousel-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.6); 
+            z-index: 1;
+        }
+        .carousel-caption {
+            z-index: 2;
+            bottom: 40%; 
+        }
+        .card-modalidade {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            transition: transform 0.3s; 
+        }
+        .card-modalidade:hover {
+            transform: scale(1.05); 
+            border-color: #ffeb3b;
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(18, 18, 18, 0.9);">
+        <div class="container">
+            <a class="navbar-brand text-amarelo fw-bold fs-3" href="#">IRON VELOCITY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase fs-6">
+                    <li class="nav-item"><a class="nav-link text-amarelo" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#modalidades">Modalidades</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Preços</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Contato</a></li>
+                </ul>
+                <a href="#" class="btn bg-amarelo px-4 py-2">MATRICULE-SE</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active bg-amarelo"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 100vh;">
+                <div class="carousel-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920" class="d-block w-100 h-100" style="object-fit: cover;" alt="Treino Força">
+                <div class="carousel-caption text-center">
+                    <h1 class="display-2 fw-bold text-white text-uppercase">Domine sua Força</h1>
+                    <p class="fs-5 mb-4">Treinamento de alta intensidade para resultados extremos. Ultrapasse seus limites na Iron Velocity.</p>
+                    <a href="#" class="btn bg-amarelo btn-lg px-5">COMECE AGORA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="modalidades" class="py-5 mt-5">
+        <div class="container">
+            <h2 class="text-center text-white mb-5 fw-bold text-uppercase">Modalidades</h2>
+            <div class="row g-4">
+                
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-modalidade h-100 p-3 text-start">
+                        <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?q=80&w=600" class="card-img-top mb-3" alt="Karate" style="height: 150px; object-fit: cover;">
+                        <h4 class="fw-bold text-white"><span class="text-amarelo">🥋</span> KARATE</h4>
+                        <p class="text-secondary mb-0">Foco em artes marciais tradicionais, disciplina e precisão técnica.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-modalidade h-100 p-3 text-start">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" class="card-img-top mb-3" alt="Musculação" style="height: 150px; object-fit: cover;">
+                        <h4 class="fw-bold text-white"><span class="text-amarelo">🏋️</span> MUSCULAÇÃO</h4>
+                        <p class="text-secondary mb-0">Equipamentos modernos e orientação especializada para resultados massivos.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-modalidade h-100 p-3 text-start">
+                        <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=600" class="card-img-top mb-3" alt="Luta Livre" style="height: 150px; object-fit: cover;">
+                        <h4 class="fw-bold text-white"><span class="text-amarelo">🤼</span> LUTA LIVRE</h4>
+                        <p class="text-secondary mb-0">Grappling dinâmico, quedas e técnicas avançadas de defesa pessoal.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-modalidade h-100 p-3 text-start">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=600" class="card-img-top mb-3" alt="Zumba" style="height: 150px; object-fit: cover;">
+                        <h4 class="fw-bold text-white"><span class="text-amarelo">💃</span> ZUMBA</h4>
+                        <p class="text-secondary mb-0">Dança e fitness de alta energia para queima calórica total.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <section id="contato" class="py-5" style="background-color: #1a1a1a;">
+        <div class="container">
+            <h2 class="text-center text-white mb-5 fw-bold text-uppercase">Contato & Localização</h2>
+            <div class="row g-4"> 
+                <div class="col-lg-6">
+                    <div class="card card-modalidade h-100 p-4">
+                        <h6 class="text-white text-uppercase mb-4 fw-bold">Mande uma mensagem</h6>
+                        <form> 
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label text-secondary small">NOME</label>
+                                    <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Seu nome completo">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-secondary small">TELEFONE</label>
+                                    <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="(00) 00000-0000">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-secondary small">E-MAIL</label>
+                                    <input type="email" class="form-control bg-dark text-white border-secondary" placeholder="seu@email.com">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-secondary small">MENSAGEM</label>
+                                    <textarea class="form-control bg-dark text-white border-secondary" rows="4" placeholder="Como podemos ajudar?"></textarea>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <button type="submit" class="btn bg-amarelo fw-bold px-4">ENVIAR MENSAGEM</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex flex-column h-100 gap-4">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-center" style="height: 250px;">
+                            <button class="btn btn-dark"><span class="text-amarelo">📍</span> VER NO MAPA</button>
+                        </div>
+                        <div class="card card-modalidade p-4 flex-grow-1">
+                            <h6 class="text-white text-uppercase mb-4 fw-bold"><span class="text-amarelo">🕒</span> Horário de Funcionamento</h6>
+                            <div class="d-flex justify-content-between border-bottom border-secondary pb-2 mb-3">
+                                <span class="text-white">Segunda a Sexta</span>
+                                <span class="text-amarelo fw-bold">05:00 - 23:00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom border-secondary pb-2 mb-3">
+                                <span class="text-white">Sábados</span>
+                                <span class="text-amarelo fw-bold">08:00 - 20:00</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-white">Domingos e Feriados</span>
+                                <span class="text-amarelo fw-bold">08:00 - 14:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
